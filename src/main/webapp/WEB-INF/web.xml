@@ -1,0 +1,31 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+    <display-name>Archetype Created Web Application</display-name>
+    <servlet>
+        <servlet-name>SetCookieServlet</servlet-name>
+        <servlet-class>SetCookieServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetCookieServlet</servlet-name>
+        <servlet-class>GetCookieServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteCookieServlet</servlet-name>
+        <servlet-class>DeleteCookieServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SetCookieServlet</servlet-name>
+        <url-pattern>/set-cookies</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetCookieServlet</servlet-name>
+        <url-pattern>/get-cookies</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteCookieServlet</servlet-name>
+        <url-pattern>/delete-cookies</url-pattern>
+    </servlet-mapping>
+</web-app>
