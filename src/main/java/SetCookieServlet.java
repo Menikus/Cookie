@@ -4,6 +4,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 
 public class SetCookieServlet extends HttpServlet {
     @Override
@@ -16,5 +17,10 @@ public class SetCookieServlet extends HttpServlet {
 
         response.addCookie(cookie1);
         response.addCookie(cookie2);
+
+        PrintWriter pw = response.getWriter();
+        pw.println("<html>" + "&#127850 saved!" + "</html>");
+
+
     }
 }

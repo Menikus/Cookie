@@ -12,5 +12,8 @@ public class DeleteCookieServlet extends HttpServlet {
         Cookie cookie = new Cookie("some_id", "");
         cookie.setMaxAge(0);
         response.addCookie(cookie);
+
+        PrintWriter pw = response.getWriter();
+        pw.println("<html>" + "&#127850: " + cookie.getName() + " deleted!" + "</html>");
     }
 }
